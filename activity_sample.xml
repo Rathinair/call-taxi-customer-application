@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sample"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hibs.GPSRoute.Sample">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/taxi_background"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:text="Tracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/ic_orange_button"
+        android:id="@+id/sb1"
+        android:layout_above="@+id/sb2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Booking"
+        android:background="@drawable/ic_green_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/sb2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/sb1"
+        android:layout_alignStart="@+id/sb1"
+        android:layout_marginBottom="26dp" />
+
+</RelativeLayout>

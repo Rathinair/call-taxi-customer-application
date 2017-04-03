@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/softblue" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_regist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.hibs.GPSRoute.Regist">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center|top"
+            android:layout_height="800dp">
+
+            <EditText
+                android:id="@+id/rege1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:hint="UserID"
+                android:visibility="gone"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/rege2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rege1"
+                android:layout_alignStart="@+id/rege1"
+                android:layout_below="@+id/rege1"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/rege3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/rege2"
+                android:layout_alignRight="@+id/rege2"
+                android:layout_below="@+id/rege2"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:hint="Age"
+                android:maxLength="2"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/rege4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rege3"
+                android:layout_alignStart="@+id/rege3"
+                android:layout_below="@+id/rege3"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="Mobile no"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/rege5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rege4"
+                android:layout_alignStart="@+id/rege4"
+                android:layout_below="@+id/rege4"
+                android:layout_marginTop="38dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/rege6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rege5"
+                android:layout_alignStart="@+id/rege5"
+                android:layout_below="@+id/rege5"
+                android:layout_marginTop="23dp"
+                android:ems="10"
+                android:hint="User name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/rege7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rege6"
+                android:layout_alignStart="@+id/rege6"
+                android:layout_below="@+id/rege6"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/regb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rege7"
+
+                android:layout_marginTop="39dp"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:text="Register" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
